@@ -1,0 +1,11 @@
+
+<% if user_signed_in? %>
+
+    <%= current_user.email %>
+
+    <%= link_to 'Salir', destroy_user_session_path, :method => :delete %>
+
+<% end %>
+
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>

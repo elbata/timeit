@@ -1,0 +1,12 @@
+rvm use ruby-1_9_2
+rvm gemset use timeit
+
+# please create an alias named ruby-1_9_2 and don't modify and push this file
+# to create an alias:
+# $> rvm alias create ruby-1_9_2 ruby-1.9.2-p136
+
+# to list the alias in your system
+# $> rmv alias list
+
+
+

@@ -1,0 +1,11 @@
+
+ <li>
+
+   <%= form_for planification, :url => :update_planification_path do %>
+     <%= hidden_field_tag :id, planification.id %>
+     <%= label_tag day %>
+     <%= text_field_tag :hours, planification.hours %>
+     <%= submit_tag 'submit' %>
+   <% end %>
+
+ </li>

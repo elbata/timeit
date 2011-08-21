@@ -1,0 +1,4 @@
+class Dedication < Registry
+
+
+end

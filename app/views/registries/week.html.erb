@@ -1,0 +1,23 @@
+<%= "Semana #{@week}" %>
+
+<div id='planifications'>
+  Horas Planificadas
+  <ul>
+    <% (1..7).each do |day| %>
+      <% if past? @week, day %>
+        <%= render :partial => 'show_planification', :locals => {:day => day, :planification => @planifications[day]} %>
+      <% else %>
+        <%= render :partial => 'edit_planification', :locals => {:day => day, :planification => @planifications[day]} %>
+      <% end %>
+    <% end %>
+  </ul>
+</div>
+
+<div id='dedications'>
+  Horas Planificadas
+  <ul>
+    <% (1..7).each do |day| %>
+      <%#= render :partial => 'dedication', :locals => {:day => day, :dedication => @dedications[day]} %>
+    <% end %>
+  </ul>
+</div>
